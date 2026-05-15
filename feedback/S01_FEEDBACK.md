@@ -1,8 +1,10 @@
 # Rétroaction automatisée -- S01 (Diagnostic fondamental -- NexaMart kickoff)
 
-_Générée le 2026-05-14T22:28:59+00:00 -- Run `20260514T221333Z-7d34bf6a`_
+_Générée le 2026-05-15T12:41:59+00:00 -- Run `20260515T122624Z-00a5a04f`_
 
 Ce document est produit par un pipeline reproductible (vérification SQL déterministe + analyse LLM du brief et de la déclaration IA). Une revue humaine précède toujours sa publication. **À ce stade expérimental, aucune note ni étiquette de niveau n'est diffusée : l'objectif est purement formatif.**
+
+> ⚠️ **Avertissement instructeur (à retirer avant publication) :** cette analyse a été générée avec `--skip-pull`. Le contenu correspond au commit local et **n'est peut-être pas la dernière version poussée par l'étudiant·e**.
 
 ---
 
@@ -15,37 +17,37 @@ _Observation technique : aucun bloc SQL fencé trouvé et extraction LLM échou�
 
 **Pistes :**
 > Aucun bloc ```sql ... ``` détecté. Encadrez votre requête finale dans la section « Preuve » pour fiabiliser l'auto-validation.
-> Extracteur LLM : Le brief fourni ne contient aucune requête SQL dans les sections, donc rien à extraire.
+> Extracteur LLM : Le brief fourni ne contient aucune requête SQL dans la section 'Preuve' ni ailleurs ; rien à extraire.
 
 ## 2. Rétroaction pédagogique sur le brief
 
-> Le livrable est actuellement vide : aucune des sections demandées n'est renseignée. Veuillez compléter le brief avec le diagnostic, la modélisation, la preuve SQL et une recommandation exécutive claire.
+> Le brief rendu est essentiellement vide et ne répond pas à la question CEO. Remplissez les sections clés (réponse exécutive, modèle, preuve et validations) en suivant les consignes de format et les contrôles attendus.
 
 ### Observations par dimension
 
 **Model quality**
 - Observation : brief absent ou trop court
-- Piste d'amélioration : Remplir la section « Décisions de modélisation » en précisant le grain (ex. : ligne de commande) et les dimensions clés avec attributs.
+- Piste d'amélioration : Rédiger le schéma de modèle en précisant le grain, les dimensions et mesures, et expliquer comment il répond à la question CEO (150–300 mots au total).
 
 **Validation quality**
 - Observation : brief absent ou trop court
-- Piste d'amélioration : Fournir au moins une requête SQL de validation et expliquer quels contrôles (NULLs, doublons, rowcounts) sont exécutés.
+- Piste d'amélioration : Fournir au moins une requête SQL de validation qui retourne le résultat attendu et documenter les contrôles (NULLs, doublons, checks de grain).
 
 **Executive justification**
 - Observation : brief absent ou trop court
-- Piste d'amélioration : Rédiger une réponse exécutive en 150–300 mots qui répond directement à la question CEO et inclut une recommandation claire.
+- Piste d'amélioration : Écrire une réponse exécutive en langage décisionnel (150–300 mots) qui indique la recommandation au CEO basée sur les résultats du modèle.
 
 **Process trace**
 - Observation : brief absent ou trop court
-- Piste d'amélioration : Ajouter un journal de commits (≥3) et une note sur l'utilisation d'outils IA indiquant validation humaine et décisions prises.
+- Piste d'amélioration : Ajouter un journal de commits (≥3) et une note IA précisant les outils utilisés et la validation humaine pour documenter le processus.
 
 **Reproducibility**
 - Observation : brief absent ou trop court
-- Piste d'amélioration : Inclure un README et un script de vérification (make check) permettant de cloner et reproduire les résultats sans chemins codés en dur.
+- Piste d'amélioration : Inclure un README et un script 'make check' exécutable permettant à un pair de cloner le dépôt et reproduire les contrôles en <5 minutes.
 
 ## 3. Déclaration d'utilisation de l'IA
 
-> La déclaration contient un gabarit utile et un exemple montrant outil, étape et validation humaine. Il manque cependant toute mention des limites ou erreurs observées et l'exemple n'indique pas de versions d'outils.
+> La déclaration suit le format attendu et donne un exemple concret de modèle, prompt et validation humaine. Il manque toutefois une mention des limites ou des erreurs observées ; ajoutez une ligne décrivant les limites rencontrées pour chaque interaction.
 
 **Sujets bien couverts dans votre déclaration :**
 
@@ -66,11 +68,11 @@ _Observation technique : aucun bloc SQL fencé trouvé et extraction LLM échou�
 
 ## 5. Traçabilité
 
-- **Run ID :** `20260514T221333Z-7d34bf6a`
+- **Run ID :** `20260515T122624Z-00a5a04f`
 - **Devoir :** `S01`
 - **Étudiant·e :** `tatanao`
-- **Commit analysé :** `12b1647`
-- **Audit (côté instructeur) :** `tools/instructor/feedback_pipeline/audit/20260514T221333Z-7d34bf6a/tatanao/`
+- **Commit analysé :** `6956cc7`
+- **Audit (côté instructeur) :** `tools/instructor/feedback_pipeline/audit/20260515T122624Z-00a5a04f/tatanao/`
 - **Prompts (SHA-256) :**
   - `sql_extractor_system` : `90ee9e277de7a27f...`
   - `rubric_grader_system` : `505f32d1d8319d66...`
