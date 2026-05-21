@@ -1,6 +1,6 @@
 # Rétroaction automatisée -- S02 (Première étoile -- schéma en étoile, grain et dimensions conformes)
 
-_Générée le 2026-05-21T17:48:31+00:00 -- Run `20260521T173854Z-8262142b`_
+_Générée le 2026-05-21T20:47:42+00:00 -- Run `20260521T204029Z-63dae822`_
 
 Ce document est produit par un pipeline reproductible (vérification SQL déterministe + analyse LLM du brief et de la déclaration IA). Une revue humaine précède toujours sa publication. **À ce stade expérimental, aucune note ni étiquette de niveau n'est diffusée : l'objectif est purement formatif.**
 
@@ -21,7 +21,7 @@ Vous pouvez relancer le grader local (`tools/grader/grade_brief.py`) pour obteni
 
 ## 3. Déclaration d'utilisation de l'IA
 
-> La déclaration documente un modèle utilisé, la séance et une méthode de validation humaine, mais elle reste un exemple à remplacer et n'indique pas de limites ni d'erreurs observées. Ajoutez pour chaque interaction le numéro de version/modèle précis et une section sur les limites ou erreurs rencontrées.
+> La déclaration contient un format correct et un exemple d'utilisation (Copilot) avec validation humaine. Il manque toutefois une mention des limites/erreurs observées et les outils ne précisent pas de version/modèle détaillée.
 
 **Sujets bien couverts dans votre déclaration :**
 
@@ -42,11 +42,11 @@ Vous pouvez relancer le grader local (`tools/grader/grade_brief.py`) pour obteni
 
 ## 5. Traçabilité
 
-- **Run ID :** `20260521T173854Z-8262142b`
+- **Run ID :** `20260521T204029Z-63dae822`
 - **Devoir :** `S02`
 - **Étudiant·e :** `tatanao`
-- **Commit analysé :** `087f0e9`
-- **Audit (côté instructeur) :** `tools/instructor/feedback_pipeline/audit/20260521T173854Z-8262142b/tatanao/`
+- **Commit analysé :** `44b92c2`
+- **Audit (côté instructeur) :** `tools/instructor/feedback_pipeline/audit/20260521T204029Z-63dae822/tatanao/`
 - **Prompts (SHA-256) :**
   - `ai_usage_grader_system` : `81cb7fdf89bda55a...`
   - `rubric_grader_system` : `505f32d1d8319d66...`
